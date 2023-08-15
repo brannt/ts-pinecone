@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "rootDir": "./",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": ["src", "package.json"],
+  "exclude": ["src/**/*.test.ts"],
+  "resolveJsonModule": {
+    "extensions": [".ts", ".tsx", ".js", ".jsx"]
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
